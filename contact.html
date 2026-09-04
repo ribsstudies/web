@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | RIBS Business Studies Centre</title>
+  <meta name="description" content="Get in touch with RIBS Business Studies Centre. Visit us in Lagos or send us a message.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span>RIBS</span> Business Studies
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programmes.html" class="nav-link">Programmes</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="contact.html" class="nav-cta">Enroll Now</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <strong>Contact Us</strong>
+      </div>
+      <h1>Get in Touch</h1>
+      <p>We'd love to hear from you. Reach out for enquiries or programme information.</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3 class="reveal">Contact Information</h3>
+
+          <div class="contact-details reveal reveal-delay-1">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div class="contact-text">
+                <h4>Visit Us</h4>
+                <p>Interland Building,<br>
+                Plot C40, 2nd floor, Alakoso Ave,<br>
+                After ABC Transport Terminal,<br>
+                Amuwo-Odofin, Lagos.</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div class="contact-text">
+                <h4>Call Us</h4>
+                <p><a href="tel:+2348175957767">+234-817-595-7767</a></p>
+                <p><a href="tel:+2348098250836">+234-809-825-0836</a></p>
+                <p><a href="tel:+2348033006211">+234-803-300-6211</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-text">
+                <h4>Email Us</h4>
+                <p><a href="mailto:ribs@ribsng.com">ribs@ribsng.com</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div class="contact-text">
+                <h4>Working Hours</h4>
+                <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                Saturday: 9:00 AM - 2:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="reveal reveal-delay-2" style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border);">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.5!2d3.3!3d6.45!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjcnMDAuMCJOIDPCsDE4JzAwLjAiRQ!5e0!3m2!1sen!2sng!4v1234567890"
+              width="100%"
+              height="300"
+              style="border:0; filter: grayscale(0.8) contrast(1.1);"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="RIBS Business Studies Centre Location">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form reveal">
+          <h3 style="margin-bottom: var(--space-2xl);">Send Us a Message</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input class="form-input" type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address *</label>
+                <input class="form-input" type="email" id="email" name="email" required placeholder="your@email.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="+234 xxx xxx xxxx">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <select class="form-input" id="subject" name="subject">
+                  <option value="">Select a topic</option>
+                  <option value="enrollment">Programme Enrollment</option>
+                  <option value="information">General Information</option>
+                  <option value="consultancy">Consultancy Services</option>
+                  <option value="partnership">Partnership Enquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Message *</label>
+              <textarea class="form-textarea" id="message" name="message" required placeholder="How can we help you?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background: var(--color-bg-elevated);">
+    <div class="container">
+      <div class="services-header">
+        <span class="section-label reveal">Have Questions?</span>
+        <h2 class="reveal reveal-delay-1">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="services-grid" style="max-width: 900px; margin: 0 auto;">
+        <div class="service-card reveal">
+          <h3>How do I enroll in a programme?</h3>
+          <p>Contact us via phone or email, or visit our office. We'll guide you through the enrollment process and provide all necessary information.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <h3>What are the admission requirements?</h3>
+          <p>Requirements vary by programme. Generally, you need a relevant degree or professional experience. Contact us for specific requirements.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <h3>Do you offer online classes?</h3>
+          <p>We offer both in-person and hybrid learning options. Contact us to learn more about our flexible learning arrangements.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <h3>Are your certifications internationally recognized?</h3>
+          <p>Yes! Our CILT and IPMA certifications are recognized internationally, opening doors to global career opportunities.</p>
+        </div>
+        <div class="service-card reveal reveal-delay-4">
+          <h3>Can corporate organizations send employees?</h3>
+          <p>Absolutely! We offer corporate training packages and can customize programmes to meet your organization's specific needs.</p>
+        </div>
+        <div class="service-card reveal">
+          <h3>What is the duration of each programme?</h3>
+          <p>Durations vary: CILT Certificate (6 months), Diploma (12 months), Advanced Diploma (18 months). Contact us for detailed schedules.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom: var(--space-sm);">
+            <span>RIBS</span> Business Studies
+          </a>
+          <p>Professional training and consultancy in Logistics and Transport. Accredited provider for international certifications.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programmes.html">Programmes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Programmes</h4>
+          <ul class="footer-links">
+            <li><a href="programmes.html">CILT Diploma</a></li>
+            <li><a href="programmes.html">CILT Advanced Diploma</a></li>
+            <li><a href="programmes.html">IPMA Certification</a></li>
+            <li><a href="programmes.html">OOUC PPGD</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li>Interland Building,</li>
+            <li>Plot C40, 2nd floor,</li>
+            <li>Alakoso Ave, Amuwo-Odofin</li>
+            <li>Lagos, Nigeria</li>
+            <li style="margin-top: var(--space-sm);"><a href="tel:+2348175957767">+234-817-595-7767</a></li>
+            <li><a href="mailto:ribs@ribsng.com">ribs@ribsng.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 RIBS Business Studies Centre. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook">f</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
