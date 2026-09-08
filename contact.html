@@ -23,7 +23,7 @@
         <a href="about.html" class="nav-link">About</a>
         <a href="programmes.html" class="nav-link">Programmes</a>
         <a href="contact.html" class="nav-link active">Contact</a>
-        <a href="contact.html" class="nav-cta">Enroll Now</a>
+        <a href="RIBS_BUSINESS_STUDIES_HANDBOOK_2026.docx" class="nav-cta" download>Download Handbook</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
@@ -59,10 +59,9 @@
               <div class="contact-icon">📍</div>
               <div class="contact-text">
                 <h4>Visit Us</h4>
-                <p>Interland Building,<br>
-                Plot C40, 2nd floor, Alakoso Ave,<br>
-                After ABC Transport Terminal,<br>
-                Amuwo-Odofin, Lagos.</p>
+                <p>Iman College,<br>
+                Along Ago-Okota, Apple Junction Road,<br>
+                Amuwo Odofin, Lagos, Nigeria.</p>
               </div>
             </div>
 
@@ -70,9 +69,8 @@
               <div class="contact-icon">📞</div>
               <div class="contact-text">
                 <h4>Call Us</h4>
-                <p><a href="tel:+2348175957767">+234-817-595-7767</a></p>
-                <p><a href="tel:+2348098250836">+234-809-825-0836</a></p>
-                <p><a href="tel:+2348033006211">+234-803-300-6211</a></p>
+                <p><a href="tel:+2348026349891">08026349891</a></p>
+                <p><a href="tel:+2348175957767">08175957767</a></p>
               </div>
             </div>
 
@@ -80,7 +78,7 @@
               <div class="contact-icon">✉️</div>
               <div class="contact-text">
                 <h4>Email Us</h4>
-                <p><a href="mailto:ribs@ribsng.com">ribs@ribsng.com</a></p>
+                <p><a href="mailto:tundes001@yahoo.com">tundes001@yahoo.com</a></p>
               </div>
             </div>
 
@@ -112,7 +110,12 @@
         <!-- Contact Form -->
         <div class="contact-form reveal">
           <h3 style="margin-bottom: var(--space-2xl);">Send Us a Message</h3>
-          <form>
+          <form id="contactForm" action="https://formsubmit.co/tundes001@yahoo.com" method="POST">
+            <!-- FormSubmit configuration -->
+            <input type="hidden" name="_subject" value="New Enquiry from RIBS Website">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_next" value="https://ribsstudies.github.io/web/contact.html?submitted=true">
+
             <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="name">Full Name *</label>
@@ -151,13 +154,35 @@
               Send Message
             </button>
           </form>
+
+          <!-- Success message (shown after submission) -->
+          <div id="formSuccess" style="display: none; text-align: center; padding: var(--space-3xl); background: var(--color-bg-elevated); border-radius: var(--radius-lg); margin-top: var(--space-lg);">
+            <div style="font-size: 3rem; margin-bottom: var(--space-md);">✅</div>
+            <h3>Message Sent Successfully!</h3>
+            <p style="margin-top: var(--space-md);">Thank you for contacting RIBS. We'll get back to you soon.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section -->
+  <!-- Download Handbook -->
   <section class="section" style="background: var(--color-bg-elevated);">
+    <div class="container" style="text-align: center;">
+      <h2 class="reveal">Download Our Handbook</h2>
+      <p class="reveal reveal-delay-1" style="max-width: 600px; margin: var(--space-lg) auto var(--space-2xl); font-size: 1.1rem;">
+        Get detailed information about our programmes, faculty, and services.
+      </p>
+      <div class="reveal reveal-delay-2">
+        <a href="RIBS_BUSINESS_STUDIES_HANDBOOK_2026.docx" class="btn btn-primary" download>
+          📥 Download Handbook (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
     <div class="container">
       <div class="services-header">
         <span class="section-label reveal">Have Questions?</span>
@@ -179,7 +204,7 @@
         </div>
         <div class="service-card reveal reveal-delay-3">
           <h3>Are your certifications internationally recognized?</h3>
-          <p>Yes! Our CILT and IPMA certifications are recognized internationally, opening doors to global career opportunities.</p>
+          <p>Yes! Our CILT certifications are recognized internationally, opening doors to global career opportunities.</p>
         </div>
         <div class="service-card reveal reveal-delay-4">
           <h3>Can corporate organizations send employees?</h3>
@@ -217,19 +242,18 @@
           <ul class="footer-links">
             <li><a href="programmes.html">CILT Diploma</a></li>
             <li><a href="programmes.html">CILT Advanced Diploma</a></li>
-            <li><a href="programmes.html">IPMA Certification</a></li>
-            <li><a href="programmes.html">OOUC PPGD</a></li>
+            <li><a href="programmes.html">CIOTA PPGD</a></li>
           </ul>
         </div>
         <div>
           <h4 class="footer-heading">Contact</h4>
           <ul class="footer-links">
-            <li>Interland Building,</li>
-            <li>Plot C40, 2nd floor,</li>
-            <li>Alakoso Ave, Amuwo-Odofin</li>
-            <li>Lagos, Nigeria</li>
-            <li style="margin-top: var(--space-sm);"><a href="tel:+2348175957767">+234-817-595-7767</a></li>
-            <li><a href="mailto:ribs@ribsng.com">ribs@ribsng.com</a></li>
+            <li>Iman College,</li>
+            <li>Along Ago-Okota,</li>
+            <li>Apple Junction Road,</li>
+            <li>Amuwo Odofin, Lagos</li>
+            <li style="margin-top: var(--space-sm);"><a href="tel:+2348026349891">08026349891</a></li>
+            <li><a href="tel:+2348175957767">08175957767</a></li>
           </ul>
         </div>
       </div>
@@ -245,5 +269,12 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Check if form was submitted successfully
+    if (window.location.search.includes('submitted=true')) {
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
 </body>
 </html>

@@ -170,32 +170,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      const formData = new FormData(contactForm);
-      const name = formData.get('name');
-      const email = formData.get('email');
-      const subject = formData.get('subject');
-      const message = formData.get('message');
-
-      // Simple validation
-      if (!name || !email || !message) {
-        showNotification('Please fill in all required fields.', 'error');
-        return;
-      }
-
-      // Simulate form submission
       const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Sending...';
-      submitBtn.disabled = true;
+      if (submitBtn) {
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Sending...';
+        submitBtn.disabled = true;
 
-      setTimeout(() => {
-        showNotification('Thank you! Your message has been sent.', 'success');
-        contactForm.reset();
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-      }, 1500);
+        // Re-enable after 3 seconds as fallback
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+        }, 3000);
+      }
+      // Allow native form submission to FormSubmit.co
     });
   }
 
